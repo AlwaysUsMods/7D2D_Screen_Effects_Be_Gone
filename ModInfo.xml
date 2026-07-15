@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="Remove-Biome-Screen-Effects"/>
+	<DisplayName value="Remove Biome Screen Effects"/>
+	<Version value="1.0.0"/>
+	<Description value="QOL adjustment to remove screen effects."/>
+	<Author value="DemonataGaming"/>
+	<Website value="https://www.youtube.com/channel/UCm8o-2ZJERLqcowIEsTjJYA"/>
+  <GameVersion value="2.0" />
+</xml>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ==================================================
+  Buff Effects - Biome Screen Overlay Removal
+  @version     1.0.0
+  @date        2025-08-04
+  @author      Demonata Gaming
+  @group       VisualEffects_BiomeOverlay
+  @description
+    Removes forced biome screen overlay effects caused by lazy buff triggers.
+    This patch disables the default TFP visual haze applied outside the Pine Forest biome.
+  @notes
+    - Prevents players from being locked into screen-distorting effects when entering harsh biomes.
+    - Buffs like 'buffWasteland_Hazard01' use intensity to force screen tints and visual effects.
+    - This patch sets their trigger intensity to 0, suppressing overlays without removing buff logic.
+  ==================================================
+-->
+<configs>
+  <!-- ===============================
+       SECTION: SUPPRESS BIOME SCREEN OVERLAYS
+       ===============================
+       @group     VisualEffects_BiomeOverlay
+       @desc      Disables visual tint overlays tied to biome hazard buffs by zeroing their intensity triggers.
+       @notes     This does not remove the hazard buffs themselves, only the forced screen distortion they cause.
+       @xref      buffs.xml → SECTION: BIOME HAZARD VISUALS
+  -->
+  <set xpath="/buffs/buff[@name='buffBurnt_Hazard01']/effect_group/triggered_effect[@trigger='onSelfBuffStart']/@intensity">0</set>
+  <set xpath="/buffs/buff[@name='buffBurnt_Hazard02']/effect_group/triggered_effect[@trigger='onSelfBuffStart']/@intensity">0</set>
+  <set xpath="/buffs/buff[@name='buffDesert_Hazard01']/effect_group/triggered_effect[@trigger='onSelfBuffStart']/@intensity">0</set>
+  <set xpath="/buffs/buff[@name='buffDesert_Hazard02']/effect_group/triggered_effect[@trigger='onSelfBuffStart']/@intensity">0</set>
+  <set xpath="/buffs/buff[@name='buffSnow_Hazard01']/effect_group/triggered_effect[@trigger='onSelfBuffStart']/@intensity">0</set>
+  <set xpath="/buffs/buff[@name='buffSnow_Hazard02']/effect_group/triggered_effect[@trigger='onSelfBuffStart']/@intensity">0</set>
+  <set xpath="/buffs/buff[@name='buffWasteland_Hazard01']/effect_group/triggered_effect[@trigger='onSelfBuffStart']/@intensity">0</set>
+  <set xpath="/buffs/buff[@name='buffWasteland_Hazard02']/effect_group/triggered_effect[@trigger='onSelfBuffStart']/@intensity">0</set>
+</configs>
