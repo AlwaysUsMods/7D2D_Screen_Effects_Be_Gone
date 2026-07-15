@@ -79,7 +79,7 @@ If your code is released under its own license (e.g., MIT, GPL-3.0), simply incl
 **Example Implementation:**
 
 > `@version     1.0.0`
-> `SPDX-License-Identifier: MIT` *(covers your code)*
+> `SPDX-License-Identifier: MIT` *(covers your code)*  
 > `SPDX-License-Identifier: LicenseRef-AlwaysUsMods-Metadata-2.0` *(covers this metadata structure)*
 
 If you’re unsure whether your use qualifies—**ask first**. It’s easier than apologizing later.
